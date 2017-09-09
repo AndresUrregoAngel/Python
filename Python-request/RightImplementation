@@ -1,0 +1,13 @@
+import requests
+
+username = "xxxxxx"
+password = "xxx"
+
+root = "https://studio.ubity.com"
+s = requests.Session()
+
+login_r = s.post(root + "/login_handler",
+                 data={'login': username, 'password': password})
+
+stats_url = root + "/queue/csv/stats/dis0003-CustomerService/1499400000/1499400000"
+print(s.get(stats_url).text.encode('utf-8'))
