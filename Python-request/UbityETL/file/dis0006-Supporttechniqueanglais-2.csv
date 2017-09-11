@@ -1,5 +1,4 @@
 agent,calls,percentage of total calls,call time,percentage of total call time,average call time,onhold time,average onhold time,pause time,average pause time
-464,0,0,0,0,0,0,0,0,0
-474,0,0,0,0,0,0,0,0,0
+464,2,66,621,27,310,0,0,0,0
 455,0,0,0,0,0,0,0,0,0
-457,0,0,0,0,0,0,0,0,0
+457,1,33,1623,72,1623,0,0,0,0
