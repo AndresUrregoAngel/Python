@@ -55,5 +55,10 @@ def getinboundfiles():
             if section:
                 sections.append(section)
             for i, section in enumerate(sections):
-                open(os.path.join("file", "%s-%d.csv" % (queue, i + 1)),
-                     "wb").write('\n'.join(section).encode('utf-8'))
+                #open(os.path.join("file", "%s-%d.csv" % (queue, i + 1)),
+                     #"wb").write('\n'.join(section).encode('utf-8'))
+                open("C:\\Batches\\UbityETL\\file\\%s-%d.csv" % (queue, i + 1),"wb").write('\n'.join(section).encode('utf-8'))
+                #print(z)
+
+
+
