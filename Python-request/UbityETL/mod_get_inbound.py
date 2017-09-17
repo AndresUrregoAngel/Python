@@ -4,8 +4,8 @@ import datetime
 import time
 
 def getinboundfiles():
-    username = "nmanseau@distech-controls.com"
-    password = "ubity2015"
+    username = "xx"
+    password = "xx"
 
     root = "https://studio.ubity.com"
     s = requests.Session()
