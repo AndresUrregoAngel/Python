@@ -1,8 +1,8 @@
 import boto3
 from botocore.client import Config
 
-ACCESS_KEY_ID = 'AKIAIEHQZ52XONC4JQXA'
-ACCESS_SECRET_KEY = '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'
+ACCESS_KEY_ID = 'xxxx'
+ACCESS_SECRET_KEY = 'xxx'
 BUCKET_NAME = 'biximontreal'
 
 s3 = boto3.resource(
