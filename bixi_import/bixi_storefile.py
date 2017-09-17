@@ -1,14 +1,14 @@
 import boto3
 from botocore.client import Config
 
-ACCESS_KEY_ID = 'xxxx'
-ACCESS_SECRET_KEY = 'xxx'
+xxxxxx = 'xxxx'
+xxxx= 'xxx'
 BUCKET_NAME = 'biximontreal'
 
 s3 = boto3.resource(
     's3',
-    aws_access_key_id=ACCESS_KEY_ID,
-    aws_secret_access_key=ACCESS_SECRET_KEY,
+    aws_access_key_id=xxxx,
+    aws_secret_access_key=xxxxxxx,
     config=Config(signature_version='s3v4')
 )
 
