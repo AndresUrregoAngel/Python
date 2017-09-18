@@ -25,6 +25,7 @@ def getoutboundfiles(accountcode):
     month = now.month
 
     stats_url = root + "/switch_to/" + accountcode
+    s.get(stats_url)
     url = root + "/cdr_api/csv/cdrs-%d-%02d-outgoing.csv" % (year,month)
     url_access = s.get(url).text.encode('utf-8')
     open("C:\\Batches\\UbityETL\\file\\outgoing-%s-%s-%02d.csv" % (accountcode, year, month), "wb").write(url_access)
