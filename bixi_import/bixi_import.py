@@ -13,7 +13,7 @@ def lambda_handler(event, context):
 '''
 
 def lambda_handler(event, context):
-    file = 'https://secure.bixi.com/data/stations.json'
+    file = 'website-here'
     result = requests.get(file)
     data = result.json()
     now = datetime.datetime.now()
@@ -27,6 +27,6 @@ def lambda_handler(event, context):
         json.dump(data, outfile)
     return print("download succeed")
 
-#handler_name('n','n')
+lambda_handler('n','n')
 
 
