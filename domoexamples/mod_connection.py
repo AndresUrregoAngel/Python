@@ -23,7 +23,7 @@ def init_domo_client(client_id, client_secret, **kwargs):
     ch.setFormatter(formatter)
     logging.getLogger().addHandler(ch)
 
-    return Domo(client_id, client_secret, logger_name='xx@xx.com',
+    return Domo(client_id, client_secret, logger_name='xx@dxx',
                 log_level=logging.INFO, **kwargs)
 
 
@@ -32,12 +32,13 @@ def init_domo_client(client_id, client_secret, **kwargs):
 # Create an instance of the SDK Client
 domo = init_domo_client(client_id, client_secret, api_host = 'api.domo.com')
 datasets = domo.datasets
-
+'''
 csv_file_path = './math.csv'
 include_csv_header = True
 csv_file = datasets.data_export_to_file('datasetid', csv_file_path,
                                         include_csv_header)
 csv_file.close()
+'''
 
 '''
 dataset_name = 'Invoice DC inc + SAS NPD'
@@ -49,9 +50,8 @@ print(result)
 '''
 #print(retrieved_dataset)
 
-'''
+
 dataset_list = list(datasets.list(sort=Sorting.NAME))
 domo.logger.info("Retrieved a list containing {} DataSet(s)".format(len(dataset_list)))
-for v in dataset_list:
-    print(v)
-'''
+#for v in dataset_list:
+ #   print(v)
