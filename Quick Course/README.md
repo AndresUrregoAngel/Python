@@ -1,10 +1,12 @@
+# Course 
+
 This is a quick course created for academical purposes. The approache to follow is create a wide-view with examples about Python 3.6 
 and the uses cases that could be deployed with this interpreter language programming.
 
 subjects: 
 
-Python setup
-Python IDE
+* Python setup
+* Python IDE
 Variables
 Python Operators
 Arithemetic Operator
