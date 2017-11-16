@@ -7,29 +7,29 @@ subjects:
 
 * Python setup
 * Python IDE
-Variables
-Python Operators
-Arithemetic Operator
-Comparison Operator
-Assignment Operator
-Bitwise Operator
-Membership Operator
-Identity Operator
-If Statement
-If Else Statement
-Break & Continue Statement
-For Loop
-While Loop
-Home Assignment
-String
-Number
-List
-Dictionary
-Function
-Module
-Exception
-Home Assignment
-File Operation
-File Reading
-File Writing
-Appending File
+* Variables
+* Python Operators
+* Arithemetic Operator
+* Comparison Operator
+* Assignment Operator
+* Bitwise Operator
+* Membership Operator
+* Identity Operator
+* If Statement
+* If Else Statement
+* Break & Continue Statement
+* For Loop
+* While Loop
+* Home Assignment
+* String
+* Number
+* List
+* Dictionary
+* Function
+* Module
+* Exception
+* Home Assignment
+* File Operation
+* File Reading
+* File Writing
+* Appending File
