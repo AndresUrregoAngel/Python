@@ -45,4 +45,15 @@ elif (answer.upper() == 'THEY'):
 else:
      print('The pronoun you provided is not valide')
 
-## Examples
+## Examples case within a method
+
+answer  = input('Which time would you like to know how to conjugate?')
+
+def conjugate(time):
+    return {
+        'past': 'I,He,She and It => Was / You,We and They => Were',
+        'present': 'I => am / You and We => are / He,She and It => is',
+        'future': 'I => am going to/ You and We => are going to / He,She and It => is going to'
+    }[time]
+
+print(conjugate(answer.lower()))
