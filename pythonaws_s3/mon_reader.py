@@ -1,5 +1,5 @@
 import boto
 
-conn = boto.connect_s3('AKIAIXSY423F3SSKO3IA' ,'ecfIp0cUfHeuey0lyB0YfGOJTYkQFK1+zr4Navhw')
+conn = boto.connect_s3('xxx' ,'xxx')
 bucket = conn.create_bucket('file')
 
