@@ -7,29 +7,22 @@ subjects:
 
 * Python setup
 * Python IDE
+
+**Development basic concepts**
 * Variables
-* Python Operators
-* Arithemetic Operator
-* Comparison Operator
-* Assignment Operator
-* Bitwise Operator
-* Membership Operator
-* Identity Operator
-* If Statement
-* If Else Statement
-* Break & Continue Statement
-* For Loop
-* While Loop
-* Home Assignment
-* String
-* Number
-* List
-* Dictionary
-* Function
-* Module
+* Python Operations
+* Loops (For, While)
+* Conditionals (IF, ELSE, CASE)
+* Data structures (Lists, Tuples)
+* Files lectures
+* Methods and functions 
 * Exception
-* Home Assignment
-* File Operation
-* File Reading
-* File Writing
-* Appending File
+* SQLite manipulation
+
+**Oriented Object programming**
+* Classes
+  * Attributs and methods
+* Modules development approach   
+* Inheritance
+
+**Django**
