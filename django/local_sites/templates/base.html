@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lan="en">
+	<font face = "arial">
+	<head>
+		<meta charset="utf-8">
+		<title>{%block title%}English - Future{% endblock %}</title>
+	</head>
+	<body>
+		<header>
+			<p><img src="/static/logo_school.png" alt="Picture of Rango" style="width:550px;height:100px;" /></p>
+		    <h1>English course website</h1>			
+			{% if user.is_authenticated %}
+				<a href="{% url 'logout' %}">logout</a>
+			{% else %}
+				<a href="{% url 'login' %}">login</a> / <a href="{% url 'singup' %}">singup</a>
+			{% endif %}
+			<hr>			
+		</header>
+		<main>
+		{% block content %}
+		{% endblock %}
+		</main>
+		<p>All rights reserved by @ Owen Nicolas Diaz 2018 - Made in Colombia / Bogota DC</p>
+	</body>
+	</font>
+</html>

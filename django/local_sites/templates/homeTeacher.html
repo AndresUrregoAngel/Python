@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container-fluid">	
+	<div class="row">
+	<div class= "col-sm-2">
+	<ul class="sidebar-nav">
+          <li><a href="">Students Report</a></li>
+          <li><a href="">Exercises</a></li>	 
+    </ul>
+	</div>
+	<div class="col-sm-10 ">
+	<h2> Welcome - You are a Teacher, {{user.get_full_name}} <small> {{user.username}}</small>!</h2>
+	<p> Your birth date: {{user.profile.birth_date}}</p>
+	<p><img src="/static/teacher_home.jpg" alt="Teachers" style="width:550px;height:300px;"></p>
+	</div>
+	</div>
+</div>
+{% endblock %}
+
