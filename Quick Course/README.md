@@ -1,3 +1,6 @@
+
+(https://drive.google.com/file/d/1tyDEsyTettvbckSSO-oktIpXyKgAJJgF/view?usp=sharing)
+
 # Course 
 
 This is a quick course created for academical purposes. The approache to follow is create a wide-view with examples about Python 3.6 
