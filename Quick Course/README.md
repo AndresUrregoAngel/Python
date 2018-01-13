@@ -1,4 +1,4 @@
-[![logo](https://drive.google.com/file/d/1tyDEsyTettvbckSSO-oktIpXyKgAJJgF/view?usp=sharing)]
+[![logo](https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg)]
 
 # Course 
 
