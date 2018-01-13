@@ -14,7 +14,7 @@ subjects:
 * Variables
 * Python Operations
 * Loops (For, While)
-* Conditionals (IF, ELSE, CASE)
+* Conditionals (IF, ELSE)
 * Data structures (Lists, Tuples)
 * Files lectures
 * Methods and functions 
