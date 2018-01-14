@@ -11,12 +11,12 @@ subjects:
 * Python IDE
 
 **Development basic concepts**
-* Variables
-* Python Operations
-* Loops (For, While)
-* Conditionals (IF, ELSE)
-* Data structures (Lists, Tuples)
-* Files lectures
+* Variables - Done
+* Python Operations - Done
+* Loops (For, While) - Done
+* Conditionals (IF, ELSE) - Done
+* Data structures (Lists, Tuples) - Done
+* Files read/write - Done
 * Methods and functions 
 * Exception
 * SQLite manipulation
