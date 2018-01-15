@@ -1,0 +1,6 @@
+Based on the file csv stored in the folder data answer the questions below:
+
+* Read the file and print a new output file with Date,Department,Employees for the rows with employees bigger than 1000
+* What is the AVG employees in the department Veterans Affairs Canada in 2010
+* How many row has the file input
+* how many rows we have per year * extra bonus!
