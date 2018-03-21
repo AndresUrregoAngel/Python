@@ -15,15 +15,15 @@ import botocore
 import os.path
 
 # edit this value to the name of the bucket you created in your AWS account
-S3_BUCKET_NAME = 'spark-course-data'
+S3_BUCKET_NAME = 'poc-developers'
 
 def file_to_string(filename):
     """
     reads the sent file from disk and returns contents as a string
     """
-    with open (filename, "r") as myfile:
-        data=myfile.read()
+    data = open (filename, "r", encoding='utf-8')
     return data
+
 
 def get_files_to_upload(csv_file):
     try:
@@ -33,10 +33,12 @@ def get_files_to_upload(csv_file):
     except:
         print ("ERROR: Data file looks bad: "+csv_file)
 
-    for line in data.split('\n'):
+
+    for line in data:
+        item = line.split(",")
         # file path is the second column
         try:
-            file_path = line.split(',')[1].strip()
+            file_path = item[1]
             #print (file_path)
             if file_path.endswith('.txt'):
                 files_to_upload.append(file_path)
@@ -66,7 +68,7 @@ if __name__ == '__main__':
         print ("ERROR - requested bucket not found. You asked for '"+S3_BUCKET_NAME+"' but you only have these: "+str(buckets) + ' did you create a bucket in the AWS manager?')
         exit(0)
     # get a list of files to upload from the CSV file
-    csv_file = 'gp_200mb.csv'
+    csv_file = 'gp_200mb.txt'
     if os.path.isfile(csv_file) == False:
         print ("ERROR: The data file index "+csv_file+" does not exist. Have you unzipped the dataset gutenberg_dataset.zip into this folder?")
         exit(0)
@@ -78,7 +80,7 @@ if __name__ == '__main__':
         if os.path.isfile(filename) == False:
             print ('ERROR: cannot find file '+filename+' did you unzip the dataset gutenberg_dataset.zip into this folder?')
             exit(0)
-        data = open(filename, 'rb')
+        data = open(filename, "rb")
         try:
             s3.Bucket(S3_BUCKET_NAME).put_object(Key=filename, Body=data)
         except botocore.exceptions.ClientError:
