@@ -15,7 +15,7 @@ import botocore
 import os.path
 
 # edit this value to the name of the bucket you created in your AWS account
-S3_BUCKET_NAME = 'poc-developers'
+S3_BUCKET_NAME = 'xxxx'
 
 def file_to_string(filename):
     """
