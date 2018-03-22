@@ -29,6 +29,6 @@ for name in buckets:
 
 filename = "test_"+str(ts.now())
 filepath = 'C:\\Users\\a_urrego\\Documents\\DW Project\\datasources\\test.txt'
-bucket_name = 'poc-developers'
+bucket_name = 'xxxxxxx'
 s3.upload_file(filepath, bucket_name, filename)
 
