@@ -10,6 +10,8 @@
   * Check model info:
     * from <app name>.models import <models/tables>
     * select * from  - <models/table>.objects.all()
+ * At this time the useful link to setup the [logins is here](https://wsvincent.com/django-user-authentication-tutorial-login-and-logout/)
+ 
 ---
 
 ##### Examples:
