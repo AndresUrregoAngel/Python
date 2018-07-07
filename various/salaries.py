@@ -12,7 +12,6 @@ for i in values:
 print(sum)
 
 
-"""
 
 files = {
     'Input.txt': 'Randy',
@@ -37,7 +36,10 @@ def group_by_owners(files):
 
 print(group_by_owners(files))
 
-
+"""
+x = range(6)
+y =[0]*len(x)
+print(y)
 
 
 

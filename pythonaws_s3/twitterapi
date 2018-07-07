@@ -1,0 +1,16 @@
+{ "API" : [{
+  "consumer_key":"VHL5GjX4dRp79BajtsnjmzLZQ",
+  "consumer_secret":"CC9dhdN8qBUvDkvMravCHQXK9YaCnV3hEIASCZoEzJYqkFPbE6",
+  "access_token_key":"58503859-CIvylQ4dY0NATO8hznbhvL7y9Ua71dgHlM6gr0aWg",
+  "access_token_secret":"iXvUxV8Uhhy4K174dyz3HMe5WP03PzarzF3fJuhTbVB2T"
+ }],
+  "DB" : [{
+    "user":"root",
+    "passwd":"4W5RDS12019!",
+    "port": 3306,
+    "endpoint" : "analyticspoc.czjiomcrhfyx.us-east-1.rds.amazonaws.com",
+    "db" : "social"
+  }]
+
+
+}
