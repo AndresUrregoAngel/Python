@@ -57,6 +57,7 @@ def electionWinner(votes):
 
 ltest = [2,4,5,6,7,82,4]
 result = [i  for i in ltest if i > 5] # comprehension
+result = [ i + 10 if i < 5 else  i for i in ltest ] # comprehension with if/else
 x = lambda a : a + 5 #lambda example
 print(x(5))
 
