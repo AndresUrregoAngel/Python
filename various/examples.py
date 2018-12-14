@@ -1,30 +1,35 @@
-votes =[2,
-'{}[]()',
-'{[}]}]']
+### Bracer balance
 
-print(votes)
-braces = ['(',')']
-for i in votes:
-    if type(i) == int:
-        pass
-    else:
+votes =["{}[]()","{[}]}]"]
+print(votes[-1],votes.pop())
+opening = tuple('({[')
+closing = tuple(')}]')
+mapping = dict(zip(opening, closing)) # zip appends two lost in set or dict
+print(mapping['{'])
+print(mapping)
+queue = []
 
-        for n in range(len(i)):
-            print(i[n])
+print(range(len(votes)))
+for i in range(len(votes)):
+    for letter in votes:
+        print(letter[i])
+    if letter in opening:
+        queue.append(mapping[letter])
+    elif letter in closing:
+        if not queue or letter != queue.pop(): # pop removes the last element on a list
+            print('false')
 
+            
+# Elections challenge
 def electionWinner(votes):
     try:
-        candidatename = []
+      
         votescounting = []
-        totalvotes = 0
         # Gather candidates name
-        for name in votes:
-            if type(name) == int:
-                totalvotes = name
-            elif name not in candidatename:
-                candidatename.append(name)
+        candidatename = [item for item in votes if type(item) != int  ]
 
         # Calculate individual votes
+   
         for name in candidatename:
             qvote = 0
             for vote in votes:
@@ -42,16 +47,23 @@ def electionWinner(votes):
         candidatew = ''
         for i in votescounting:
             for j in votescounting:
-                if i['votes'] <= j['votes']:
-                    candidatew = j['candidate']
-                else:
+                if i['votes'] == j['votes']:
                     candidatew = i['candidate']
-            winners.append(j['candidate'])
+                elif i['votes'] < j['votes']:
+                    candidatew = j['candidate']
+            winners.append(candidatew)
+        
+   
     except  Exception as error:
         print('there is an error in the method : {}'.format(error))
     
     else: 
-        return winners
+        return winners[:1]
+
+votes = [6,'Pablo','Pablo','Alice','Allison','Alice','Allison','Ashley','Ashley','Raul','Raul','Raul','Pablo','Pablo']
+
+result = electionWinner(votes)
+print(result)
     
 
 
