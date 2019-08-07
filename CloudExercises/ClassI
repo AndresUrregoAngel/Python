@@ -1,0 +1,15 @@
+* Create a new bucket with an stadard name without dots(.) or any strange character
+* Create a new lmabda functions that will create 10 files with different names in the previous bucket
+  * Lists with file names
+  * The whole files can have the same content  
+* The files must be created with storage class as IA 'STANDARD_IA'
+
+* Create a second lambda functions to delete the whole files from the bucket
+
+
+
+
+resources: 
+
+* https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.put_object
+* https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/s3.html#S3.Client.delete_objects
